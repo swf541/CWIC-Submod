@@ -1,0 +1,2819 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "custom_armor_tech_bg"
+		position = {x=0 y=0}
+		iconType = { name = "custom_armor_tech_bg_icon"  spriteType = "" position = { x = 0 y = 0 } alwaystransparent = yes	} 
+	}
+	containerWindowType = {
+		name = "custom_infantry_tech_bg"
+		position = {x=0 y=0}
+		iconType = { 
+			name = "dynamic_infantry_tech_bg_icon"  
+			spriteType = "" position = { x = 0 y = 0 } 
+		} 
+	}
+	
+	containerWindowType = {
+		name = "debt_fin_info_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 50%% y = 580 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "gen_debt_info_tab_menu_open_text"
+			position = { x = 75%% y = 15 }
+			font = "hoi_24header"
+			text = "Debt Information"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "total_debt"
+			position = { x = 15 y = 45 }
+			font = "hoi_24header"
+			text = "Total Outstanding Debt: [?currentDebt|R2]M"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "monthly_payments"
+			position = { x = 15 y = 80 }
+			font = "hoi_24header"
+			text = "Monthly Debt Payments: [?currentDebtPayments|R2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		instantTextBoxType = {
+			name = "austerity_level"
+			position = { x = 15 y = 115 }
+			font = "hoi_24header"
+			text = "Austerity May Occur at: [?austerityCheck|R2]B"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		instantTextBoxType = {
+			name = "default_level"
+			position = { x = 15 y = 150 }
+			font = "hoi_24header"
+			text = "Default Risk Begins at: [?defaultCheck|R2]B"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic2"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 	
+	}	
+	containerWindowType = {
+		name = "parliament_window_container"
+		position = { x = 0 y = 494 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 100%% height = 375 }
+		clipping = yes
+		moveable = no
+
+		
+		
+		
+		################ Seat Representation
+
+		iconType = { name = "icon_seat1"  spriteType = "GFX_political_colors" frame = 1				position = { x = 73 y = 115	} scale = 0.35 }
+		iconType = { name = "icon_seat2"  spriteType = "GFX_political_colors" frame = 2				position = { x = 55 y = 115	} scale = 0.35 }
+		iconType = { name = "icon_seat3"  spriteType = "GFX_political_colors" frame = 3				position = { x = 38 y = 115	} scale = 0.35 }
+		iconType = { name = "icon_seat4"  spriteType = "GFX_political_colors" frame = 4				position = { x = 20 y = 115	} scale = 0.35 }
+		iconType = { name = "icon_seat5"  spriteType = "GFX_political_colors" frame = 5				position = { x = 81 y = 91	} scale = 0.35 }
+		iconType = { name = "icon_seat6"  spriteType = "GFX_political_colors" frame = 6				position = { x = 61 y = 92	} scale = 0.35 }
+		iconType = { name = "icon_seat7"  spriteType = "GFX_political_colors" frame = 7				position = { x = 42 y = 93	} scale = 0.35 }
+		iconType = { name = "icon_seat8"  spriteType = "GFX_political_colors" frame = 8				position = { x = 24 y = 94	} scale = 0.35 }
+		iconType = { name = "icon_seat9"  spriteType = "GFX_political_colors" frame = 9				position = { x = 73 y = 72	} scale = 0.35 }
+		iconType = { name = "icon_seat10"  spriteType = "GFX_political_colors" frame = 10			position = { x = 51 y = 73	} scale = 0.35 }
+		iconType = { name = "icon_seat11"  spriteType = "GFX_political_colors" frame = 11			position = { x = 31 y = 74	} scale = 0.35 }
+		iconType = { name = "icon_seat12"  spriteType = "GFX_political_colors" frame = 12			position = { x = 64 y = 56	} scale = 0.35 }
+		iconType = { name = "icon_seat13"  spriteType = "GFX_political_colors" frame = 13			position = { x = 42 y = 56	} scale = 0.35 }
+		iconType = { name = "icon_seat14"  spriteType = "GFX_political_colors" frame = 14			position = { x = 56 y = 40	} scale = 0.35 }
+		iconType = { name = "icon_seat15"  spriteType = "GFX_political_colors" frame = 15			position = { x = 98 y = 72	} scale = 0.35 }
+		iconType = { name = "icon_seat16"  spriteType = "GFX_political_colors" frame = 16			position = { x = 90 y = 57	} scale = 0.35 }
+		iconType = { name = "icon_seat17"  spriteType = "GFX_political_colors" frame = 17			position = { x = 81 y = 42	} scale = 0.35 }
+		iconType = { name = "icon_seat18"  spriteType = "GFX_political_colors" frame = 18			position = { x = 73 y = 27	} scale = 0.35 }
+		iconType = { name = "icon_seat19"  spriteType = "GFX_political_colors" frame = 19			position = { x = 121 y = 62	} scale = 0.35 }
+		iconType = { name = "icon_seat20"  spriteType = "GFX_political_colors" frame = 20			position = { x = 111 y = 47	} scale = 0.35 }
+		iconType = { name = "icon_seat21"  spriteType = "GFX_political_colors" frame = 21			position = { x = 101 y = 32	} scale = 0.35 }
+		iconType = { name = "icon_seat22"  spriteType = "GFX_political_colors" frame = 22			position = { x = 92 y = 17	} scale = 0.35 }
+		iconType = { name = "icon_seat23"  spriteType = "GFX_political_colors" frame = 23			position = { x = 134 y = 44	} scale = 0.35 }
+		iconType = { name = "icon_seat24"  spriteType = "GFX_political_colors" frame = 24			position = { x = 123 y = 27	} scale = 0.35 }
+		iconType = { name = "icon_seat25"  spriteType = "GFX_political_colors" frame = 25 			position = { x = 113 y = 10	} scale = 0.35 }
+		iconType = { name = "icon_seat26"  spriteType = "GFX_political_colors" frame = 26			position = { x = 134 y = 9	} scale = 0.35 }
+		iconType = { name = "icon_seat27"  spriteType = "GFX_political_colors" frame = 27			position = { x = 145 y = 27	} scale = 0.35 }
+		iconType = { name = "icon_seat28"  spriteType = "GFX_political_colors" frame = 28			position = { x = 155 y = 11	} scale = 0.35 }
+		iconType = { name = "icon_seat29"  spriteType = "GFX_political_colors" frame = 29			position = { x = 146 y = 62	} scale = 0.35 }
+		iconType = { name = "icon_seat30"  spriteType = "GFX_political_colors" frame = 30			position = { x = 157 y = 47	} scale = 0.35 }
+		iconType = { name = "icon_seat31"  spriteType = "GFX_political_colors" frame = 31			position = { x = 166 y = 32	} scale = 0.35 }
+		iconType = { name = "icon_seat32"  spriteType = "GFX_political_colors" frame = 32			position = { x = 175 y = 16	} scale = 0.35 }
+		iconType = { name = "icon_seat33"  spriteType = "GFX_political_colors" frame = 33			position = { x = 169 y = 72	} scale = 0.35 }
+		iconType = { name = "icon_seat34"  spriteType = "GFX_political_colors" frame = 34			position = { x = 177 y = 57	} scale = 0.35 }
+		iconType = { name = "icon_seat35"  spriteType = "GFX_political_colors" frame = 35			position = { x = 186 y = 42	} scale = 0.35 }
+		iconType = { name = "icon_seat36"  spriteType = "GFX_political_colors" frame = 36			position = { x = 194 y = 27	} scale = 0.35 }
+		iconType = { name = "icon_seat37"  spriteType = "GFX_political_colors" frame = 37			position = { x = 211 y = 39	} scale = 0.35 }
+		iconType = { name = "icon_seat38"  spriteType = "GFX_political_colors" frame = 38			position = { x = 203 y = 56	} scale = 0.35 }
+		iconType = { name = "icon_seat39"  spriteType = "GFX_political_colors" frame = 39			position = { x = 225 y = 56	} scale = 0.35 }
+		iconType = { name = "icon_seat40"  spriteType = "GFX_political_colors" frame = 40			position = { x = 194 y = 72	} scale = 0.35 }
+		iconType = { name = "icon_seat41"  spriteType = "GFX_political_colors" frame = 41			position = { x = 216 y = 73	} scale = 0.35 }
+		iconType = { name = "icon_seat42"  spriteType = "GFX_political_colors" frame = 42			position = { x = 236 y = 74	} scale = 0.35 }
+		iconType = { name = "icon_seat43"  spriteType = "GFX_political_colors" frame = 43			position = { x = 186 y = 91	} scale = 0.35 }
+		iconType = { name = "icon_seat44"  spriteType = "GFX_political_colors" frame = 44			position = { x = 206 y = 92	} scale = 0.35 }
+		iconType = { name = "icon_seat45"  spriteType = "GFX_political_colors" frame = 45			position = { x = 225 y = 93	} scale = 0.35 }
+		iconType = { name = "icon_seat46"  spriteType = "GFX_political_colors" frame = 46			position = { x = 243 y = 93	} scale = 0.35 }
+		iconType = { name = "icon_seat47"  spriteType = "GFX_political_colors" frame = 47			position = { x = 195 y = 115} scale = 0.35 }
+		iconType = { name = "icon_seat48"  spriteType = "GFX_political_colors" frame = 48			position = { x = 212 y = 115} scale = 0.35 }
+		iconType = { name = "icon_seat49"  spriteType = "GFX_political_colors" frame = 49			position = { x = 230 y = 115} scale = 0.35 }
+		iconType = { name = "icon_seat50"  spriteType = "GFX_political_colors" frame = 50			position = { x = 246 y = 115} scale = 0.35 }
+
+
+
+		############## Election Results 
+
+
+		instantTextBoxType = {
+			name = "communist_popularity"
+			position = { x = 20 y = 140 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize0]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "democratic_socialists_popularity"
+			position = { x = 20 y = 155 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize1]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "social_democrats_popularity"
+			position = { x = 20 y = 170 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize2]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "progressive_popularity"
+			position = { x = 20 y = 185 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize3]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "social_liberal_popularity"
+			position = { x = 20 y = 200 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize4]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "libertarian_popularity"
+			position = { x = 20 y = 215 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize5]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "conservative_popularity"
+			position = { x = 20 y = 230 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize6]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "reactionary_popularity"
+			position = { x = 20 y = 245 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize7]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "monarchist_popularity"
+			position = { x = 20 y = 260 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize8]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "nationalist_popularity"
+			position = { x = 20 y = 275 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize9]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "third_position_popularity"
+			position = { x = 20 y = 290 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize10]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "islamist_popularity"
+			position = { x = 20 y = 305 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize11]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "Christian_Democratic_popularity"
+			position = { x = 20 y = 320 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize12]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "centrist_popularity"
+			position = { x = 20 y = 335 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize13]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "liberal_popularity"
+			position = { x = 20 y = 350 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize14]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "maoism_popularity"
+			position = { x = 20 y = 365 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize15]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "radical_shiaism_popularity"
+			position = { x = 20 y = 380 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize16]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "Salafism_popularity"
+			position = { x = 20 y = 395 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize17]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "trotskyism_popularity"
+			position = { x = 20 y = 405 }
+			font = "hoi_16mbs"
+			text = "[GetPartySize18]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+
+		####################### Political Groups
+
+
+		
+		instantTextBoxType = {
+			name = "political_groups_title"
+			position = { x = 20 y = 340 }
+			font = "hoi_36header"
+			text = "Political Statistics"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		containerWindowType = {
+			name = "groups_bar_container"
+			position = { x = 20 y = 370 }
+			size = { width = 230 height = 40 }
+			clipping = yes
+
+			iconType = {
+				name = "groups_bar_progress"
+				spriteType = "GFX_groups_bar_progress"
+				position = { x = 0 y = -1 }
+			}
+			iconType = {
+				name = "groups_bar_bg"
+				quadTextureSprite = "GFX_parliament_bar_bg"
+				position = { x = 0 y = 0 }
+			}
+
+			iconType = {
+				name = "groups_bar_fifty_percent"
+				quadTextureSprite = "GFX_parliament_bar_middle"
+				position = { x = 0 y = 0 }
+			}
+		}
+
+		instantTextBoxType = {
+			name = "government_group"
+			position = { x = 20 y = 415 }
+			font = "hoi_16mbs"
+			text = "[?ROOT.Coalition]% Support / [?ROOT.Opposition]% Opposition"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "coalition"
+			position = { x = 20 y = 430 }
+			font = "hoi_16mbs"
+			text = "coalitiontype"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = yes
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		#instantTextBoxType = {
+		#	name = "head_of_gov"
+		#	position = { x = 20 y = 445 }
+		#	font = "hoi_16mbs"
+		#	text = prime_minister_leader	#Head of Government
+		#	maxWidth = 400
+		#	maxHeight = 40
+		#	fixedsize = yes
+		#	format = left
+		#	Orientation = "UPPER_LEFT"
+		#}		
+		instantTextBoxType = {
+			name = "hog"
+			position = { x = 20 y = 445 }
+			font = "hoi_16mbs"
+			text = [head_of_state]	#Head of State
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = yes
+			format = left
+			Orientation = "UPPER_LEFT"
+		}				
+
+	}
+
+	containerWindowType = {
+		name = "legislation_menu_button"
+		position = { x = 364 y = 422 }
+		size = { width = 50 height = 50 }
+
+		buttonType = {
+			name = "legislation_menu_open"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_button_148x34"
+			buttonFont = "Main_14_black"
+			Orientation = "CENTER"
+			clicksound = click_open
+			clicksound = click_default
+			buttonFont = "hoi_16mbs"
+			buttonText = "Policies"
+			pdx_tooltip = parliament_tooltip
+		}
+	}
+	containerWindowType = {
+		name = "legislation_menu"
+		position = { x = 1 y = 0 }	
+		show_position = { x = 750 y = 80 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 900 height = 830 }
+		clipping = yes
+		moveable = no
+	
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		
+		iconType ={
+			name ="production_header_bg"
+			spriteType = "GFX_header_double_wide_bg"
+			position = { x= 5 y = 6 }
+			Orientation = "UPPER_LEFT"
+			scale = 0.99
+		}
+		
+		instantTextboxType = {
+			name = "political_title"
+			position = { x = 45 y = 8 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "Policies"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "exitbutton_legislation" 
+			position = {x=-44 y=7}	
+			Orientation = "UPPER_RIGHT"
+			spriteType = "GFX_closebutton"
+			shortcut = "ESCAPE"
+		}		
+
+		
+		################ Seat Representation
+		
+		buttonType = {
+			name = "legislation_anti_racial_discrimination"
+			position = { x = -700 y = 200 }
+			spriteType = "GFX_Country_Diplo_List"
+			buttonFont = "Main_14_black"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = parliament_tooltip
+		}
+		instantTextBoxType = {
+			name = "legislation_anti_racial_discrimination_text"
+			position = { x = -690 y = 205 }
+			font = "hoi_16mbs"
+			text = "[law_slot_one]"
+			maxWidth = 200
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_RIGHT"
+		}	
+		buttonType = {
+			name = "policy_switch"
+			position = { x = 100 y = 50 }
+			spriteType = "GFX_button_148x34"
+			buttonFont = "hoi_16mbs"
+			Orientation = "UPPER_LEFT"
+			text = "Fiscal Systems"
+			Orientation = "UPPER_LEFT"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = parliament_tooltip
+		}
+		
+		buttonType = {
+			name = "social_policy_switch"
+			position = { x = 360 y = 50 }
+			spriteType = "GFX_button_148x34"
+			buttonFont = "hoi_16mbs"
+			Orientation = "UPPER_LEFT"
+			text = "Social Policies"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = parliament_tooltip
+		}
+
+		buttonType = {
+			name = "legislation_switch"
+			position = { x = -290 y = 50 }
+			spriteType = "GFX_button_148x34"
+			buttonFont = "hoi_16mbs"
+			Orientation = "UPPER_LEFT"
+			text = "Finances"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = parliament_tooltip
+		}
+
+	
+	}
+	containerWindowType = {
+		name = "health_policy_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 0%% y = 580 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "Healthcare System - $[?health_cost_display|2]M"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "policy_healthcare_level_0"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_healthcare_temp_0"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "HEALTH_POL_0_desc"
+		}	
+		buttonType = {
+			name = "policy_healthcare_level_1"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_healthcare_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "HEALTH_POL_1_desc"
+		}	
+		buttonType = {
+			name = "policy_healthcare_level_2"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_healthcare_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "HEALTH_POL_2_desc"
+		}	
+		buttonType = {
+			name = "policy_healthcare_level_3"
+			position = { x = 19 y = 125 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_healthcare_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "HEALTH_POL_3_desc"
+		}	
+		buttonType = {
+			name = "policy_healthcare_level_4"
+			position = { x = 19 y = 150 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_healthcare_temp_4"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "HEALTH_POL_4_desc"
+		}	
+		buttonType = {
+			name = "policy_healthcare_level_5"
+			position = { x = 19 y = 175 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_healthcare_temp_5"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "HEALTH_POL_5_desc"
+		}	
+		instantTextBoxType = {
+			name = "policy_healthcare_level_id"
+			position = { x = 50 y = 215 }
+			font = "hoi_24header"
+			text = [HEALTH_POLICY]
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_healthcare_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [HEALTH_POLICY_EFFECT]
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic22"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+			
+		} 			
+	}
+	containerWindowType = {
+		name = "RAC_POL_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 50%% y = 580 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "Minority Rights"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "policy_RAC_POL_level_0"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_RAC_POL_temp_0"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "RAC_POL_0_desc"
+		}	
+		buttonType = {
+			name = "policy_RAC_POL_level_1"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_RAC_POL_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "RAC_POL_1_desc"
+		}	
+		buttonType = {
+			name = "policy_RAC_POL_level_2"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_RAC_POL_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "RAC_POL_2_desc"
+		}	
+		buttonType = {
+			name = "policy_RAC_POL_level_3"
+			position = { x = 19 y = 125 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_RAC_POL_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "RAC_POL_3_desc"
+		}	
+		buttonType = {
+			name = "policy_RAC_POL_level_4"
+			position = { x = 19 y = 150 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_RAC_POL_temp_4"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "RAC_POL_4_desc"
+		}	
+
+		instantTextBoxType = {
+			name = "policy_RAC_POL_level_6"
+			position = { x = 50 y = 215 }
+			font = "hoi_24header"
+			text = [RAC_POLICY]
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_RAC_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [RAC_POLICY_EFFECT]
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic23"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 			
+	}
+
+	containerWindowType = {
+		name = "SAGA_POL_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 50%% y = 100 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "Sexuality and Gender Acceptance"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "policy_SAGA_POL_level_0"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_SAGA_POL_temp_0"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "SAGA_POL_0_desc"
+		}	
+		buttonType = {
+			name = "policy_SAGA_POL_level_1"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_SAGA_POL_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "SAGA_POL_1_desc"
+		}	
+		buttonType = {
+			name = "policy_SAGA_POL_level_2"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_SAGA_POL_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "SAGA_POL_2_desc"
+		}	
+		buttonType = {
+			name = "policy_SAGA_POL_level_3"
+			position = { x = 19 y = 125 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_SAGA_POL_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "SAGA_POL_3_desc"
+		}	
+		buttonType = {
+			name = "policy_SAGA_POL_level_4"
+			position = { x = 19 y = 150 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_SAGA_POL_temp_4"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "SAGA_POL_4_desc"
+		}	
+
+		instantTextBoxType = {
+			name = "policy_SAGA_POL_leel_6"
+			position = { x = 50 y = 215 }
+			font = "hoi_24header"
+			text = [SAGA_POLICY]
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_SAGA_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [SAGA_POLICY_EFFECT]
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic24"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 			
+	}
+	containerWindowType = {
+		name = "WOM_POL_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 0%% y = 340 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "Womens's Rights"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "policy_WOM_POL_level_0"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_WOM_POL_temp_0"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "WOM_POL_0_desc"
+		}	
+		buttonType = {
+			name = "policy_WOM_POL_level_1"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_WOM_POL_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "WOM_POL_1_desc"
+		}	
+		buttonType = {
+			name = "policy_WOM_POL_level_2"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_WOM_POL_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "WOM_POL_2_desc"
+		}	
+		buttonType = {
+			name = "policy_WOM_POL_level_3"
+			position = { x = 19 y = 125 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_WOM_POL_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "WOM_POL_3_desc"
+		}	
+		buttonType = {
+			name = "policy_WOM_POL_level_4"
+			position = { x = 19 y = 150 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_WOM_POL_temp_4"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "WOM_POL_4_desc"
+		}	
+		buttonType = {
+			name = "policy_WOM_POL_level_5"
+			position = { x = 19 y = 175 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_WOM_POL_temp_5"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "WOM_POL_5_desc"
+		}	
+		instantTextBoxType = {
+			name = "policy_WOM_POL_level_6"
+			position = { x = 50 y = 215 }
+			font = "hoi_24header"
+			text = [WOM_POLICY]
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_SAGA_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [WOM_POLICY_EFFECT]
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic25"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 			
+	}
+
+	containerWindowType = {
+		name = "MEDIA_POL_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 0%% y = 580 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "Media Laws"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "policy_MEDIA_POL_level_0"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_MEDIA_POL_temp_0"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "MEDIA_POL_0_desc"
+		}	
+		buttonType = {
+			name = "policy_MEDIA_POL_level_1"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_MEDIA_POL_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "MEDIA_POL_1_desc"
+		}	
+		buttonType = {
+			name = "policy_MEDIA_POL_level_2"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_MEDIA_POL_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "MEDIA_POL_2_desc"
+		}	
+		buttonType = {
+			name = "policy_MEDIA_POL_level_3"
+			position = { x = 19 y = 125 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_MEDIA_POL_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "MEDIA_POL_3_desc"
+		}	
+		buttonType = {
+			name = "policy_MEDIA_POL_level_4"
+			position = { x = 19 y = 150 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_MEDIA_POL_temp_4"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "MEDIA_POL_4_desc"
+		}	
+
+		instantTextBoxType = {
+			name = "policy_MEDIA_POL_level_6"
+			position = { x = 50 y = 215 }
+			font = "hoi_24header"
+			text = [MEDIA_POLICY]
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_SAGA_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [MEDIA_POLICY_EFFECT]
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic27"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 			
+	}
+	containerWindowType = {
+		name = "VOT_POL_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 50%% y = 340 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "Voting Rights"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "VOT_POL_level_0"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "VOT_POL_temp_0"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "VOT_POL_0_desc"
+		}	
+		buttonType = {
+			name = "VOT_POL_level_1"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "VOT_POL_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "VOT_POL_1_desc"
+		}	
+		buttonType = {
+			name = "VOT_POL_level_2"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "VOT_POL_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "VOT_POL_2_desc"
+		}	
+		buttonType = {
+			name = "VOT_POL_level_3"
+			position = { x = 19 y = 125 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "VOT_POL_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "VOT_POL_3_desc"
+		}	
+		instantTextBoxType = {
+			name = "VOT_POL_level_6"
+			position = { x = 50 y = 215 }
+			font = "hoi_24header"
+			text = [VOT_POLICY]
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "policy_VOT_POL_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [VOT_POLICY_EFFECT]
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic2"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 			
+	}
+	containerWindowType = {
+		name = "public_policy_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 50%% y = 580 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "Public Services Policy - $[?pub_cost_display|2]M"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "policy_services_level_0"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_services_temp_0"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "PUB_POL_0_desc"
+		}	
+		buttonType = {
+			name = "policy_services_level_1"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_services_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "PUB_POL_1_desc"
+		}	
+		buttonType = {
+			name = "policy_services_level_2"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_services_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "PUB_POL_2_desc"
+		}	
+		buttonType = {
+			name = "policy_services_level_3"
+			position = { x = 19 y = 125 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_services_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "PUB_POL_3_desc"
+		}	
+		instantTextBoxType = {
+			name = "policy_services_level_id"
+			position = { x = 50 y = 215 }
+			font = "hoi_24header"
+			text = [PUB_POLICY]
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_services_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [PUB_POLICY_EFFECT]
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic2"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 			
+	}
+	containerWindowType = {
+		name = "edu_policy_tab"
+		position = { x = 50%% y = 0 }	
+		show_position = { x = 50%%  y = 340 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "Education System - $[?edu_cost_display|2]M"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "policy_education_level_0"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_education_temp_0"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "EDU_POL_0_desc"
+		}	
+		buttonType = {
+			name = "policy_education_level_1"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_education_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "EDU_POL_1_desc"
+		}	
+		buttonType = {
+			name = "policy_education_level_2"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_education_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "EDU_POL_2_desc"
+		}	
+		buttonType = {
+			name = "policy_education_level_3"
+			position = { x = 19 y = 125 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_education_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "EDU_POL_3_desc"
+		}	
+		buttonType = {
+			name = "policy_education_level_4"
+			position = { x = 19 y = 150 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_education_temp_4"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "EDU_POL_4_desc"
+		}	
+		instantTextBoxType = {
+			name = "policy_education_level_id"
+			position = { x = 50 y = 190 }
+			font = "hoi_24header"
+			text = [EDU_POLICY]
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_education_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [EDU_POLICY_EFFECT]
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic2"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 			
+	}
+	containerWindowType = {
+		name = "army_policy_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 0%% y = 100 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "Military Structure - $[?mil_expend|2]M"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "policy_military_level_1"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_military_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "MIL_POL_1_desc"
+		}	
+		buttonType = {
+			name = "policy_military_level_2"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_military_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "MIL_POL_2_desc"
+		}	
+		buttonType = {
+			name = "policy_military_level_3"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_military_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "MIL_POL_3_desc"
+		}	
+		buttonType = {
+			name = "policy_military_level_4"
+			position = { x = 19 y = 125 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_military_temp_4"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "MIL_POL_4_desc"
+		}
+		instantTextBoxType = {
+			name = "policy_military_level_id"
+			position = { x = 50 y = 215 }
+			font = "hoi_24header"
+			text = [MIL_POLICY]
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_military_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [MIL_POLICY_EFFECT]
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic2"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 			
+	}
+	containerWindowType = {
+		name = "welfare_policy_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 50%% y = 100 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "Welfare Policy - $[?welfare_cost_display|2]M"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "policy_welfare_level_0"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_welfare_temp_0"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "WEL_POL_0_desc"
+		}	
+		buttonType = {
+			name = "policy_welfare_level_1"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_welfare_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "WEL_POL_1_desc"
+		}	
+		buttonType = {
+			name = "policy_welfare_level_2"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_welfare_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "WEL_POL_2_desc"
+		}	
+		buttonType = {
+			name = "policy_welfare_level_3"
+			position = { x = 19 y = 125 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_welfare_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "WEL_POL_3_desc"
+		}	
+		buttonType = {
+			name = "policy_welfare_level_4"
+			position = { x = 19 y = 150 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_welfare_temp_4"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "WEL_POL_4_desc"
+		}	
+		buttonType = {
+			name = "policy_welfare_level_5"
+			position = { x = 19 y = 175 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_welfare_temp_5"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "WEL_POL_5_desc"
+		}	
+		instantTextBoxType = {
+			name = "policy_welfare_level_id"
+			position = { x = 50 y = 215 }
+			font = "hoi_24header"
+			text = [WEL_POLICY]
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_welfare_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [WEL_POLICY_EFFECT]
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic2"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 			
+	}
+	containerWindowType = {
+		name = "policy_info_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 0%% y = 340 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "gen_fin_info_tab_menu_open_text"
+			position = { x = 75%% y = 15 }
+			font = "hoi_24header"
+			text = "Fiscal Policy Expenditures"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_edu_level_id"
+			position = { x = 15 y = 45 }
+			font = "hoi_24header"
+			text = "Monthly Education Costs $[?edu_cost_display|2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "polic_cpi2_level_desc"
+			position = { x = 15 y = 80 }
+			font = "hoi_24header"
+			text = "Monthly Law Enforcement Costs: $[?cpi_cost_display|2]M"
+			maxWidth = 500
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		instantTextBoxType = {
+			name = "poli_pub_cost_level_desc"
+			position = { x = 15 y = 115 }
+			font = "hoi_24header"
+			text = "Monthly Public Services Costs: $[?pub_cost_display|2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		instantTextBoxType = {
+			name = "monthly_imp_resource_cost"
+			position = { x = 15 y = 150 }
+			font = "hoi_24header"
+			text = "Monthly Healthcare Costs: $[?health_cost_display|2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}			
+		
+		instantTextBoxType = {
+			name = "picy_wel_level_desc"
+			position = { x = 15 y = 185 }
+			font = "hoi_24header"
+			text = "Monthly Welfare Costs: $[?welfare_cost_display|2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}			
+		instantTextBoxType = {
+			name = "picy_mil_level_desc"
+			position = { x = 15 y = 220 }
+			font = "hoi_24header"
+			text = "Monthly Military Cost: $[?mil_expend|2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}					
+		iconType = { 
+			name = "pic2"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 			
+	}	
+	containerWindowType = {
+		name = "corruption_info_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 50%% y = 340 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "gen_fin_info_tab_menu_open_text"
+			position = { x = 75%% y = 15 }
+			font = "hoi_24header"
+			text = "Corruption Information"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_corruption_level_id"
+			position = { x = 15 y = 45 }
+			font = "hoi_24header"
+			text = "Corruption Percentage: [?CorruptionLevel|%R]"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_inc_cor_level_desc"
+			position = { x = 15 y = 80 }
+			font = "hoi_24header"
+			text = "Income Lost Due to Corruption: [?CorruptIncomeLoss|R2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		instantTextBoxType = {
+			name = "policy_pol_cor_level_desc"
+			position = { x = 15 y = 115 }
+			font = "hoi_24header"
+			text = "Policy Cost Penalty: [?CorruptPolicyExcess|%R]"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		instantTextBoxType = {
+			name = "policy_stab_level_desc"
+			position = { x = 15 y = 150 }
+			font = "hoi_24header"
+			text = "Stability Penalty: [?corrupt_stab_penalty|%R]"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		instantTextBoxType = {
+			name = "policy_enc_level_desc"
+			position = { x = 15 y = 185 }
+			font = "hoi_24header"
+			text = "Encryption Penalty: [?CorruptionLevel|%R]"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}			
+		iconType = { 
+			name = "pic2"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 	
+	}	
+	containerWindowType = {
+		name = "tax_info_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 0% y = 580 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "Tax Methodology"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "policy_tax_level_0"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_tax_temp_0"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "TAX_POL_0_desc"
+		}	
+		buttonType = {
+			name = "policy_tax_level_1"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_tax_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "TAX_POL_1_desc"
+		}	
+		buttonType = {
+			name = "policy_tax_level_2"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_tax_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "TAX_POL_2_desc"
+		}	
+		buttonType = {
+			name = "policy_tax_level_3"
+			position = { x = 19 y = 125 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_tax_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "TAX_POL_3_desc"
+		}	
+		buttonType = {
+			name = "policy_tax_level_4"
+			position = { x = 19 y = 150 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_tax_temp_4"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "TAX_POL_4_desc"
+		}	
+		buttonType = {
+			name = "policy_tax_level_5"
+			position = { x = 19 y = 175 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_tax_temp_5"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "TAX_POL_5_desc"
+		}	
+		instantTextBoxType = {
+			name = "tax_level_title"
+			position = { x = 50 y = 215 }
+			font = "hoi_24header"
+			text = [TAX_POLICY]
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_cpi_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [TAX_POLICY_EFFECT]
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic3"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 			
+	}
+
+	containerWindowType = {
+		name = "cpi_policy_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 0%% y = 340 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "CPI Level - $[?cpi_cost_display|2]M"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "policy_cpi_level_0"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_cpi_temp_0"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "CPI_POL_0_desc"
+		}	
+		buttonType = {
+			name = "policy_cpi_level_1"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_cpi_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "CPI_POL_1_desc"
+		}	
+		buttonType = {
+			name = "policy_cpi_level_2"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_cpi_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "CPI_POL_2_desc"
+		}	
+		buttonType = {
+			name = "policy_cpi_level_3"
+			position = { x = 19 y = 125 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_cpi_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "CPI_POL_3_desc"
+		}	
+		buttonType = {
+			name = "policy_cpi_level_4"
+			position = { x = 19 y = 150 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_cpi_temp_4"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "CPI_POL_4_desc"
+		}	
+		buttonType = {
+			name = "policy_cpi_level_5"
+			position = { x = 19 y = 175 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_cpi_temp_5"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "CPI_POL_5_desc"
+		}	
+		instantTextBoxType = {
+			name = "policy_cpi_level_id"
+			position = { x = 50 y = 215 }
+			font = "hoi_24header"
+			text = [CPI_POLICY]
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_cpi_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [CPI_POLICY_EFFECT]
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic4"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+			
+		} 			
+	}
+	containerWindowType = {
+		name = "upper_parliament_window_container"
+		position = { x = 400 y = 494 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 750 height = 500 }
+		clipping = yes
+		moveable = no
+
+		################ Seat Representation
+
+
+		iconType = { name = "icon_upper_seat1"  spriteType = "GFX_political_colors" frame = 1				position = { x = 73 y = 115	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat2"  spriteType = "GFX_political_colors" frame = 2				position = { x = 55 y = 115	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat3"  spriteType = "GFX_political_colors" frame = 3				position = { x = 38 y = 115	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat4"  spriteType = "GFX_political_colors" frame = 4				position = { x = 20 y = 115	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat5"  spriteType = "GFX_political_colors" frame = 5				position = { x = 81 y = 91	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat6"  spriteType = "GFX_political_colors" frame = 6				position = { x = 61 y = 92	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat7"  spriteType = "GFX_political_colors" frame = 7				position = { x = 42 y = 93	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat8"  spriteType = "GFX_political_colors" frame = 8				position = { x = 24 y = 94	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat9"  spriteType = "GFX_political_colors" frame = 9				position = { x = 73 y = 72	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat10"  spriteType = "GFX_political_colors" frame = 10			position = { x = 51 y = 73	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat11"  spriteType = "GFX_political_colors" frame = 11			position = { x = 31 y = 74	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat12"  spriteType = "GFX_political_colors" frame = 12			position = { x = 64 y = 56	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat13"  spriteType = "GFX_political_colors" frame = 13			position = { x = 42 y = 56	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat14"  spriteType = "GFX_political_colors" frame = 14			position = { x = 56 y = 40	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat15"  spriteType = "GFX_political_colors" frame = 15			position = { x = 98 y = 72	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat16"  spriteType = "GFX_political_colors" frame = 16			position = { x = 90 y = 57	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat17"  spriteType = "GFX_political_colors" frame = 17			position = { x = 81 y = 42	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat18"  spriteType = "GFX_political_colors" frame = 18			position = { x = 73 y = 27	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat19"  spriteType = "GFX_political_colors" frame = 19			position = { x = 121 y = 62	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat20"  spriteType = "GFX_political_colors" frame = 20			position = { x = 111 y = 47	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat21"  spriteType = "GFX_political_colors" frame = 21			position = { x = 101 y = 32	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat22"  spriteType = "GFX_political_colors" frame = 22			position = { x = 92 y = 17	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat23"  spriteType = "GFX_political_colors" frame = 23			position = { x = 134 y = 44	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat24"  spriteType = "GFX_political_colors" frame = 24			position = { x = 123 y = 27	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat25"  spriteType = "GFX_political_colors" frame = 25 			position = { x = 113 y = 10	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat26"  spriteType = "GFX_political_colors" frame = 26			position = { x = 134 y = 9	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat27"  spriteType = "GFX_political_colors" frame = 27			position = { x = 145 y = 27	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat28"  spriteType = "GFX_political_colors" frame = 28			position = { x = 155 y = 11	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat29"  spriteType = "GFX_political_colors" frame = 29			position = { x = 146 y = 62	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat30"  spriteType = "GFX_political_colors" frame = 30			position = { x = 157 y = 47	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat31"  spriteType = "GFX_political_colors" frame = 31			position = { x = 166 y = 32	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat32"  spriteType = "GFX_political_colors" frame = 32			position = { x = 175 y = 16	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat33"  spriteType = "GFX_political_colors" frame = 33			position = { x = 169 y = 72	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat34"  spriteType = "GFX_political_colors" frame = 34			position = { x = 177 y = 57	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat35"  spriteType = "GFX_political_colors" frame = 35			position = { x = 186 y = 42	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat36"  spriteType = "GFX_political_colors" frame = 36			position = { x = 194 y = 27	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat37"  spriteType = "GFX_political_colors" frame = 37			position = { x = 211 y = 39	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat38"  spriteType = "GFX_political_colors" frame = 38			position = { x = 203 y = 56	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat39"  spriteType = "GFX_political_colors" frame = 39			position = { x = 225 y = 56	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat40"  spriteType = "GFX_political_colors" frame = 40			position = { x = 194 y = 72	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat41"  spriteType = "GFX_political_colors" frame = 41			position = { x = 216 y = 73	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat42"  spriteType = "GFX_political_colors" frame = 42			position = { x = 236 y = 74	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat43"  spriteType = "GFX_political_colors" frame = 43			position = { x = 186 y = 91	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat44"  spriteType = "GFX_political_colors" frame = 44			position = { x = 206 y = 92	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat45"  spriteType = "GFX_political_colors" frame = 45			position = { x = 225 y = 93	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat46"  spriteType = "GFX_political_colors" frame = 46			position = { x = 243 y = 93	} scale = 0.35 }
+		iconType = { name = "icon_upper_seat47"  spriteType = "GFX_political_colors" frame = 47			position = { x = 195 y = 115} scale = 0.35 }
+		iconType = { name = "icon_upper_seat48"  spriteType = "GFX_political_colors" frame = 48			position = { x = 212 y = 115} scale = 0.35 }
+		iconType = { name = "icon_upper_seat49"  spriteType = "GFX_political_colors" frame = 49			position = { x = 230 y = 115} scale = 0.35 }
+		iconType = { name = "icon_upper_seat50"  spriteType = "GFX_political_colors" frame = 50			position = { x = 246 y = 115} scale = 0.35 }
+
+
+
+		############## Election Results 
+
+		
+		instantTextBoxType = {
+			name = "communist_popularity2"
+			position = { x = 20 y = 140 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper0]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "democratic_socialists_popularity2"
+			position = { x = 20 y = 155 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper1]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "social_democrats_popularity2"
+			position = { x = 20 y = 170 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper2]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "progressive_popularity2"
+			position = { x = 20 y = 185 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper3]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "social_liberal_popularity2"
+			position = { x = 20 y = 200 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper4]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "libertarian_popularity2"
+			position = { x = 20 y = 215 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper5]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "conservative_popularity2"
+			position = { x = 20 y = 230 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper6]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "reactionary_popularity2"
+			position = { x = 20 y = 245 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper7]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "monarchist_popularity2"
+			position = { x = 20 y = 260 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper8]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "nationalist_popularity2"
+			position = { x = 20 y = 275 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper9]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "third_position_popularity2"
+			position = { x = 20 y = 290 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper10]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "islamist_popularity2"
+			position = { x = 20 y = 305 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper11]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+
+			
+		instantTextBoxType = {
+			name = "Christian_Democratic_popularity2"
+			position = { x = 20 y = 320 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper12]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "centrist_popularity2"
+			position = { x = 20 y = 335 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper13]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "liberal_popularity2"
+			position = { x = 20 y = 350 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper14]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "maoism_popularity2"
+			position = { x = 20 y = 365 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper15]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "radical_shiaism_popularity2"
+			position = { x = 20 y = 380 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper16]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "Salafism_popularity2"
+			position = { x = 20 y = 395 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper17]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "trotskyism_popularity2"
+			position = { x = 20 y = 410 }
+			font = "hoi_16mbs"
+			text = "[GetPartySizeUpper18]"
+			maxWidth = 400
+			maxHeight = 40
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+
+		####################### Political Groups
+
+	}
+	containerWindowType = {
+		name = "REL_POL_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 0%% y = 100 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "legislation_menu_open_text"
+			position = { x = 75 y = 15 }
+			font = "hoi_24header"
+			text = "Religous Policies"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "policy_rel_pol_level_0"
+			position = { x = 19 y = 50 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_rel_pol_temp_0"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "REL_POL_0_desc"
+		}	
+		buttonType = {
+			name = "policy_rel_pol_level_1"
+			position = { x = 19 y = 75 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_rel_pol_temp_1"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "REL_POL_1_desc"
+		}	
+		buttonType = {
+			name = "policy_rel_pol_level_2"
+			position = { x = 19 y = 135 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_rel_pol_temp_2"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "REL_POL_2_desc"
+		}	
+		buttonType = {
+			name = "policy_rel_pol_level_3"
+			position = { x = 19 y = 160 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_rel_pol_temp_3"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "REL_POL_3_desc"
+		}	
+		buttonType = {
+			name = "policy_rel_pol_level_4"
+			position = { x = 19 y = 185 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_rel_pol_temp_4"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "REL_POL_4_desc"
+		}	
+		buttonType = {
+			name = "policy_rel_pol_level_5"
+			position = { x = 19 y = 100 }
+			spriteType = "GFX_large_button_ic"
+			buttonFont = "Main_16_black"
+			Orientation = "UPPER_LEFT"
+			text = "policy_rel_pol_temp_5"
+			clicksound = click_open
+			clicksound = click_default
+			pdx_tooltip = "REL_POL_5_desc"
+		}	
+		instantTextBoxType = {
+			name = "rel_pol_level_6"
+			position = { x = 50 y = 215 }
+			font = "hoi_24header"
+			text = [REL_POLICY]
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "policy_rel_level_desc"
+			position = { x = 180%% y = 50 }
+			font = "hoi_24header"
+			text = [REL_POLICY_EFFECT]
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic7"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 			
+	}
+	#Added Shadow
+	containerWindowType = {
+		name = "income_info_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 50%% y = 100 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+		instantTextBoxType = {
+			name = "gen_fin_i_tab_meu_open_text"
+			position = { x = 75%% y = 15 }
+			font = "hoi_24header"
+			text = "Monthly Income Breakdown"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "policy_corrupton_level_id"
+			position = { x = 15 y = 45 }
+			font = "hoi_24header"
+			text = "Industrial Income: [?IND_DISPLAY|2]M"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = { 
+			name = "pic7"  
+			#spriteType = "GFX_menu_shadow" 
+			position = { x = 15 y = 45 }
+			Orientation = "UPPER_LEFT"
+		} 	
+		instantTextBoxType = {
+			name = "policy_inc_cr_level_desc"
+			position = { x = 15 y = 80 }
+			font = "hoi_24header"
+			text = "Agriculture Income: [?FARM_DISPLAY|2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic6"  
+			#spriteType = "GFX_menu_shadow" 
+			position = { x = 15 y = 80 }
+			Orientation = "UPPER_LEFT"
+		} 	
+		instantTextBoxType = {
+			name = "policy_pol_r_level_desc"
+			position = { x = 15 y = 115 }
+			font = "hoi_24header"
+			text = "Refinery Income: [?refinery_total|2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic5"  
+			#spriteType = "GFX_menu_shadow" 
+			position = { x = 15 y = 115 }
+			Orientation = "UPPER_LEFT"
+		} 	
+		instantTextBoxType = {
+			name = "policy_stab_leel_desc"
+			position = { x = 15 y = 150 }
+			font = "hoi_24header"
+			text = "Office Park Income: [?OP_Display|2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "pic4"  
+			#spriteType = "GFX_menu_shadow" 
+			position = { x = 15 y = 150 }
+			Orientation = "UPPER_LEFT"
+		} 	
+		instantTextBoxType = {
+			name = "policy_enc_lvel_desc"
+			position = { x = 15 y = 185 }
+			font = "hoi_24header"
+			text = "Dockyard Income: [?DOCK_TOTAL|2]M"
+
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = { 
+			name = "pic3"  
+			#spriteType = "GFX_menu_shadow" 
+			position = { x = 15 y = 185 }
+			Orientation = "UPPER_LEFT"
+		} 	
+		instantTextBoxType = {
+			name = "policy_ec_lvel_desc"
+			position = { x = 15 y = 220 }
+			font = "hoi_24header"
+			text = "Resource Export Income: [?resource_income|2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}	
+		iconType = { 
+			name = "pic20"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 	
+		
+	}	
+	
+
+	containerWindowType = {
+		name = "gen_fin_info_tab"
+		position = { x = 0 y = 0 }	
+		show_position = { x = 0%% y = 100 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 0
+		size = { width = 450 height = 250 }
+		clipping = yes
+		moveable = no
+		background = {
+			name = "Background2"		
+			quadTextureSprite ="GFX_tiled_pol_bg"
+		}
+	
+		instantTextBoxType = {
+			name = "gen_fin_info_tab_menu_open_text"
+			position = { x = 75%% y = 15 }
+			font = "hoi_24header"
+			text = "General Financial Information"
+			maxWidth = 300
+			maxHeight = 20
+			fixedsize = no
+			format = centre
+			Orientation = "UPPER_LEFT"
+		}
+
+		
+
+		instantTextBoxType = {
+			name = "policy_cpi_level_id"
+			position = { x = 15 y = 45 }
+			font = "hoi_24header"
+			text = "Monthly Balance $[?IncomeCheck|2]M"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = { 
+			name = "dynamic_inntry_tech_bg_icon"  
+			#spriteType = "GFX_menu_shadow" 
+			position = { x = 15 y = 45 }
+			Orientation = "UPPER_LEFT"
+		} 
+		instantTextBoxType = {
+			name = "polic_cpi_level_desc"
+			position = { x = 15 y = 80 }
+			font = "hoi_24header"
+			text = "Monthly Income: $[?display_income|2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "dynamidtry_tech_bg_icon"  
+			#spriteType = "GFX_menu_shadow" 
+			position = { x = 15 y = 80 }
+			Orientation = "UPPER_LEFT"
+		} 
+		instantTextBoxType = {
+			name = "poli_cpi_level_desc"
+			position = { x = 15 y = 115 }
+			font = "hoi_24header"
+			text = "Monthly Corruption Penalty: $[?CorruptLoss|2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}		
+		iconType = { 
+			name = "dynamic_ifsdfsdy_tech_bg_icon"  
+			#spriteType = "GFX_menu_shadow" 
+			position = { x = 15 y = 115 }
+			Orientation = "UPPER_LEFT"
+		} 
+		instantTextBoxType = {
+			name = "monthly_resource_cost"
+			position = { x = 15 y = 150 }
+			font = "hoi_24header"
+			text = "Monthly Import Costs: $[?resource_cost|2]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}			
+		iconType = { 
+			name = "asf_icon"  
+			#spriteType = "GFX_menu_shadow" 
+			position = { x = 15 y = 150 }
+			Orientation = "UPPER_LEFT"
+		} 		
+		instantTextBoxType = {
+			name = "picy_cpi_level_desc"
+			position = { x = 15 y = 185 }
+			font = "hoi_24header"
+			text = "Gross Domestic Product: $[?grossdomesticproduct|2]B"   
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = { 
+			name = "asfhb_icon"  
+			#spriteType = "GFX_menu_shadow" 
+			position = { x = 15 y = 185 }
+			Orientation = "UPPER_LEFT"
+		} 
+		instantTextBoxType = {
+			name = "picy_cpi3_level_desc"
+			position = { x = 15 y = 220 }
+			font = "hoi_24header"
+			text = "Monthly Tax income: $[?tax_display]M"
+			maxWidth = 350
+			maxHeight = 20
+			fixedsize = no
+			format = left
+			Orientation = "UPPER_LEFT"
+		}	
+		iconType = { 
+			name = "pic1"  
+			spriteType = "GFX_menu_shadow" 
+			position = { x = 0%% y = 0 }
+			Orientation = "UPPER_LEFT"
+			scale = 10
+			alwaystransparent = yes
+		} 	
+	}	
+
+}	

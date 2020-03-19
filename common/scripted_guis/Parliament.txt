@@ -1,0 +1,2123 @@
+scripted_gui = {
+
+	parliament_window = {
+		window_name = "parliament_window_container"
+ 
+		context_type = player_context
+		parent_window_token = politics_tab
+		visible = {
+			NOT = { tag = DOM }
+		} 
+ 
+		properties = {
+			icon_seat1 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^0"
+			}
+			icon_seat2 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^1"
+			}
+			icon_seat3 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^2"
+			}
+			icon_seat4 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^3"
+			}
+			icon_seat5 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^4"
+			}
+			icon_seat6 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^5"
+			}
+			icon_seat7 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^6"
+			}
+			icon_seat8 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^7"
+			}
+			icon_seat9 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^8"
+			}
+			icon_seat10 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^9"
+			}
+			icon_seat11 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^10"
+			}
+			icon_seat12 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^11"
+			}
+			icon_seat13 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^12"
+			}
+			icon_seat14 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^13"
+			}
+			icon_seat15 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^14"
+			}
+			icon_seat16 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^15"
+			}
+			icon_seat17 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^16"
+			}
+			icon_seat18 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^17"
+			}
+			icon_seat19 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^18"
+			}
+			icon_seat20 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^19"
+			}
+			icon_seat21 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^20"
+			}
+			icon_seat22 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^21"
+			}
+			icon_seat23 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^22"
+			}
+			icon_seat24 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^23"
+			}
+			icon_seat25 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^24"
+			}
+			icon_seat26 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^25"
+			}
+			icon_seat27 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^26"
+			}
+			icon_seat28 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^27"
+			}
+			icon_seat29 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^28"
+			}
+			icon_seat30 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^29"
+			}
+			icon_seat31 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^30"
+			}
+			icon_seat32 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^31"
+			}
+			icon_seat33 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^32"
+			}
+			icon_seat34 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^33"
+			}
+			icon_seat35 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^34"
+			}
+			icon_seat36 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^35"
+			}
+			icon_seat37 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^36"
+			}
+			icon_seat38 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^37"
+			}
+			icon_seat39 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^38"
+			}
+			icon_seat40 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^39"
+			}
+			icon_seat41 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^40"
+			}
+			icon_seat42 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^41"
+			}
+			icon_seat43 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^42"
+			}
+			icon_seat44 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^43"
+			}
+			icon_seat45 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^44"
+			}
+			icon_seat46 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^45"
+			}
+			icon_seat47 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^46"
+			}
+			icon_seat48 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^47"
+			}
+			icon_seat49 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^48"
+			}
+			icon_seat50 = {
+				image = "GFX_political_colors"
+				frame = "parliament_array^49"
+			}
+			groups_bar_bg = {
+				x = ROOT.GroupGFX
+			}
+		}
+	}
+	upper_parliament_window = {
+		window_name = "upper_parliament_window_container"
+ 
+		context_type = player_context
+		parent_window_token = politics_tab
+		visible = {
+			NOT = { tag = DOM }
+		} 
+		properties = {
+			icon_upper_seat1 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^0"
+			}
+			icon_upper_seat2 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^1"
+			}
+			icon_upper_seat3 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^2"
+			}
+			icon_upper_seat4 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^3"
+			}
+			icon_upper_seat5 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^4"
+			}
+			icon_upper_seat6 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^5"
+			}
+			icon_upper_seat7 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^6"
+			}
+			icon_upper_seat8 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^7"
+			}
+			icon_upper_seat9 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^8"
+			}
+			icon_upper_seat10 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^9"
+			}
+			icon_upper_seat11 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^10"
+			}
+			icon_upper_seat12 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^11"
+			}
+			icon_upper_seat13 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^12"
+			}
+			icon_upper_seat14 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^13"
+			}
+			icon_upper_seat15 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^14"
+			}
+			icon_upper_seat16 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^15"
+			}
+			icon_upper_seat17 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^16"
+			}
+			icon_upper_seat18 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^17"
+			}
+			icon_upper_seat19 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^18"
+			}
+			icon_upper_seat20 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^19"
+			}
+			icon_upper_seat21 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^20"
+			}
+			icon_upper_seat22 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^21"
+			}
+			icon_upper_seat23 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^22"
+			}
+			icon_upper_seat24 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^23"
+			}
+			icon_upper_seat25 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^24"
+			}
+			icon_upper_seat26 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^25"
+			}
+			icon_upper_seat27 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^26"
+			}
+			icon_upper_seat28 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^27"
+			}
+			icon_upper_seat29 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^28"
+			}
+			icon_upper_seat30 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^29"
+			}
+			icon_upper_seat31 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^30"
+			}
+			icon_upper_seat32 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^31"
+			}
+			icon_upper_seat33 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^32"
+			}
+			icon_upper_seat34 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^33"
+			}
+			icon_upper_seat35 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^34"
+			}
+			icon_upper_seat36 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^35"
+			}
+			icon_upper_seat37 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^36"
+			}
+			icon_upper_seat38 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^37"
+			}
+			icon_upper_seat39 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^38"
+			}
+			icon_upper_seat40 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^39"
+			}
+			icon_upper_seat41 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^40"
+			}
+			icon_upper_seat42 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^41"
+			}
+			icon_upper_seat43 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^42"
+			}
+			icon_upper_seat44 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^43"
+			}
+			icon_upper_seat45 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^44"
+			}
+			icon_upper_seat46 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^45"
+			}
+			icon_upper_seat47 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^46"
+			}
+			icon_upper_seat48 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^47"
+			}
+			icon_upper_seat49 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^48"
+			}
+			icon_upper_seat50 = {
+				image = "GFX_political_colors"
+				frame = "upper_parliament_array^49"
+			}
+		}
+	}
+	legislation_menu_button = {
+
+		context_type = player_context
+		parent_window_token = politics_tab
+		
+		window_name = "legislation_menu_button"
+
+		visible = {
+			always = yes
+		}	
+		effects = {
+			legislation_menu_open_click = {
+				set_temp_variable = { show = 1 }
+				subtract_from_temp_variable = { show = legislation_menu_show }
+				set_variable = { legislation_menu_show = show }
+				set_variable = { policy_legislation = 1 }
+			}	
+		}
+	}
+		
+	legislation_menu = {
+
+		context_type = player_context
+
+		window_name = "legislation_menu"
+
+		visible = {
+			check_variable = { legislation_menu_show = 1 }
+		}	
+		effects = {
+			exitbutton_legislation_click = {
+				set_variable = { legislation_menu_show = 0 } 
+			}		
+			policy_switch_click = {
+				set_variable = { policy_legislation = 1 }
+			}
+			social_policy_switch_click = {
+				set_variable = { policy_legislation = 2 }
+			}
+			legislation_switch_click = {
+				set_variable = { policy_legislation = 3 }
+			}
+			legislation_anti_racial_discrimination_click = {
+				set_variable = { legislation_support = 0 }
+				add_to_variable = { legislation_support = communism_seats_parliament2 }
+				add_to_variable = { legislation_support = socialist_seats_parliament2 }
+				add_to_variable = { legislation_support = Social_Democratic_seats_parliament2 }
+				add_to_variable = { legislation_support = trotskyism_seats_parliament2 }
+				add_to_variable = { legislation_support = democratic_seats_parliament2 }
+				
+				add_to_variable = { legislation_support_upper = communism_seats_parliament3 }
+				add_to_variable = { legislation_support_upper = socialist_seats_parliament3 }
+				add_to_variable = { legislation_support_upper = Social_Democratic_seats_parliament3 }
+				add_to_variable = { legislation_support_upper = trotskyism_seats_parliament3 }
+				add_to_variable = { legislation_support_upper = democratic_seats_parliament3 }
+				
+				set_country_flag = legislation_anti_racial_discrimination_vote
+				set_country_flag = vote_in_progress
+				activate_mission = Anti_Racial_Discrimination_Legislation
+
+
+			}
+		}
+		triggers = {
+			policy_switch_click_enabled = {
+				NOT = { check_variable = { policy_legislation = 1 } }
+			}
+			legislation_switch_click_enabled = {
+				NOT = { check_variable = { policy_legislation = 3 } }
+			}
+			legislation_anti_racial_discrimination_visible = {
+				check_variable = { policy_legislation = 0 }
+			}
+			legislation_anti_racial_discrimination_click_enabled = {
+				NOT = { has_country_flag = vote_in_progress }
+				NOT = { has_idea = Anti_Racial_Discrimination }
+				
+			}
+		}
+	}
+	rel_pol_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "rel_pol_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 2 }
+		}	
+
+		effects = {
+			policy_rel_pol_level_0_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = state_religion
+				remove_ideas = moralism
+				remove_ideas = pluarlism
+				remove_ideas = secularism
+				remove_ideas = atheist_state
+				remove_ideas = State_Theocracy
+				
+				add_ideas = State_Theocracy
+				add_timed_idea = {
+					idea = rel_cooldown
+					days = 1
+				}
+			}
+			policy_rel_pol_level_1_click = {
+				set_variable = { legislation_support = 0 }				
+				remove_ideas = state_religion
+				remove_ideas = moralism
+				remove_ideas = pluarlism
+				remove_ideas = secularism
+				remove_ideas = atheist_state
+				remove_ideas = State_Theocracy
+				
+				add_ideas = state_religion
+				add_timed_idea = {
+					idea = rel_cooldown
+					days = 1
+				}
+			}
+			policy_rel_pol_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = state_religion
+				remove_ideas = moralism
+				remove_ideas = pluarlism
+				remove_ideas = secularism
+				remove_ideas = atheist_state
+				remove_ideas = State_Theocracy
+				
+				add_ideas = moralism
+				add_timed_idea = {
+					idea = rel_cooldown
+					days = 1
+				}
+			}
+			policy_rel_pol_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = state_religion
+				remove_ideas = moralism
+				remove_ideas = pluarlism
+				remove_ideas = secularism
+				remove_ideas = atheist_state
+				remove_ideas = State_Theocracy
+				
+				add_ideas = pluarlism
+				add_timed_idea = {
+					idea = rel_cooldown
+					days = 1
+				}
+			}
+			policy_rel_pol_level_4_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = state_religion
+				remove_ideas = moralism
+				remove_ideas = pluarlism
+				remove_ideas = secularism
+				remove_ideas = atheist_state
+				remove_ideas = State_Theocracy
+				add_ideas = secularism
+				add_timed_idea = {
+					idea = rel_cooldown
+					days = 1
+				}
+			}			
+			policy_rel_pol_level_5_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = state_religion
+				remove_ideas = moralism
+				remove_ideas = pluarlism
+				remove_ideas = secularism
+				remove_ideas = atheist_state
+				remove_ideas = State_Theocracy
+				add_ideas = atheist_state
+				add_timed_idea = {
+					idea = rel_cooldown
+					days = 1
+				}
+			}					
+		}
+		triggers = {
+			policy_rel_pol_level_0_click_enabled = {
+				NOT = { has_idea = State_Theocracy }
+				NOT = { has_idea = rel_cooldown }
+			}
+			policy_rel_pol_level_1_click_enabled = {
+				NOT = { has_idea = state_religion }
+				NOT = { has_idea = rel_cooldown }
+			}
+			policy_rel_pol_level_2_click_enabled = {
+				NOT = { has_idea = moralism }
+				NOT = { has_idea = rel_cooldown }
+			}
+			policy_rel_pol_level_3_click_enabled = {
+				NOT = { has_idea = pluarlism }
+				NOT = { has_idea = rel_cooldown }
+			}
+			policy_rel_pol_level_4_click_enabled = {
+				NOT = { has_idea = secularism }
+				NOT = { has_idea = rel_cooldown }
+			}
+			policy_rel_pol_level_5_click_enabled = {
+				NOT = { has_idea = atheist_state }
+				NOT = { has_idea = rel_cooldown }
+			}
+
+		}
+	}
+
+	public_policy_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "public_policy_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 1 }
+		}	
+		effects = {
+			policy_services_level_0_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_services_temp_0
+				remove_ideas = policy_services_temp_1
+				remove_ideas = policy_services_temp_2
+				remove_ideas = policy_services_temp_3
+				
+				add_ideas = policy_services_temp_0
+				
+				public_expenditure = yes
+				add_timed_idea = {
+					idea = pol_cooldown
+					days = 1
+				}
+			}
+			policy_services_level_1_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_services_temp_0
+				remove_ideas = policy_services_temp_1
+				remove_ideas = policy_services_temp_2
+				remove_ideas = policy_services_temp_3
+				
+				add_ideas = policy_services_temp_1
+				public_expenditure = yes
+				add_timed_idea = {
+					idea = pol_cooldown
+					days = 1
+				}
+				
+			}
+			policy_services_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_services_temp_0
+				remove_ideas = policy_services_temp_1
+				remove_ideas = policy_services_temp_2
+				remove_ideas = policy_services_temp_3
+				
+				add_ideas = policy_services_temp_2
+				public_expenditure = yes
+				add_timed_idea = {
+					idea = pol_cooldown
+					days = 1
+				}
+			}
+			policy_services_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_services_temp_0
+				remove_ideas = policy_services_temp_1
+				remove_ideas = policy_services_temp_2
+				remove_ideas = policy_services_temp_3
+				
+				add_ideas = policy_services_temp_3
+				public_expenditure = yes
+				add_timed_idea = {
+					idea = pol_cooldown
+					days = 1
+				}
+			}
+			
+		}
+		triggers = {
+			policy_services_level_0_click_enabled = {
+				NOT = { has_idea = policy_services_temp_0 }
+				NOT = { has_idea = pol_cooldown }
+				
+			}
+			policy_services_level_1_click_enabled = {
+				NOT = { has_idea = policy_services_temp_1 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = pol_cooldown }
+			}
+			policy_services_level_2_click_enabled = {
+				NOT = { has_idea = policy_services_temp_2 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = pol_cooldown }
+			}
+			policy_services_level_3_click_enabled = {
+				NOT = { has_idea = policy_services_temp_3 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = pol_cooldown }
+			}
+
+		}
+	}	
+
+	health_policy_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "health_policy_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 1 }
+		}	
+		effects = {
+			policy_healthcare_level_0_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_healthcare_temp_0
+				remove_ideas = policy_healthcare_temp_1
+				remove_ideas = policy_healthcare_temp_2
+				remove_ideas = policy_healthcare_temp_3
+				remove_ideas = policy_healthcare_temp_4
+				remove_ideas = policy_healthcare_temp_5
+				
+				add_ideas = policy_healthcare_temp_0
+				health_expenditure = yes
+				add_timed_idea = {
+					idea = hel_cooldown
+					days = 1
+				}
+			}
+			policy_healthcare_level_1_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_healthcare_temp_0
+				remove_ideas = policy_healthcare_temp_1
+				remove_ideas = policy_healthcare_temp_2
+				remove_ideas = policy_healthcare_temp_3
+				remove_ideas = policy_healthcare_temp_4
+				remove_ideas = policy_healthcare_temp_5
+				
+				add_ideas = policy_healthcare_temp_1
+				health_expenditure = yes
+				add_timed_idea = {
+					idea = hel_cooldown
+					days = 1
+				}
+			}
+			policy_healthcare_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_healthcare_temp_0
+				remove_ideas = policy_healthcare_temp_1
+				remove_ideas = policy_healthcare_temp_2
+				remove_ideas = policy_healthcare_temp_3
+				remove_ideas = policy_healthcare_temp_4
+				remove_ideas = policy_healthcare_temp_5
+				
+				add_ideas = policy_healthcare_temp_2
+				health_expenditure = yes
+				add_timed_idea = {
+					idea = hel_cooldown
+					days = 1
+				}
+			}
+			policy_healthcare_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_healthcare_temp_0
+				remove_ideas = policy_healthcare_temp_1
+				remove_ideas = policy_healthcare_temp_2
+				remove_ideas = policy_healthcare_temp_3
+				remove_ideas = policy_healthcare_temp_4
+				remove_ideas = policy_healthcare_temp_5
+				
+				add_ideas = policy_healthcare_temp_3
+				health_expenditure = yes
+				add_timed_idea = {
+					idea = hel_cooldown
+					days = 1
+				}
+			}
+			policy_healthcare_level_4_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_healthcare_temp_0
+				remove_ideas = policy_healthcare_temp_1
+				remove_ideas = policy_healthcare_temp_2
+				remove_ideas = policy_healthcare_temp_3
+				remove_ideas = policy_healthcare_temp_4
+				remove_ideas = policy_healthcare_temp_5
+				
+				add_ideas = policy_healthcare_temp_4
+				health_expenditure = yes
+				add_timed_idea = {
+					idea = hel_cooldown
+					days = 1
+				}
+			}			
+			policy_healthcare_level_5_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_healthcare_temp_0
+				remove_ideas = policy_healthcare_temp_1
+				remove_ideas = policy_healthcare_temp_2
+				remove_ideas = policy_healthcare_temp_3
+				remove_ideas = policy_healthcare_temp_4
+				remove_ideas = policy_healthcare_temp_5
+				
+				add_ideas = policy_healthcare_temp_5
+				health_expenditure = yes
+				add_timed_idea = {
+					idea = hel_cooldown
+					days = 1
+				}
+			}					
+		}
+		triggers = {
+			policy_healthcare_level_0_click_enabled = {
+				NOT = { has_idea = policy_healthcare_temp_0 }
+				NOT = { has_idea = hel_cooldown }
+			}
+			policy_healthcare_level_1_click_enabled = {
+				NOT = { has_idea = policy_healthcare_temp_1 }
+				NOT = { has_idea = hel_cooldown }
+			}
+			policy_healthcare_level_2_click_enabled = {
+				NOT = { has_idea = policy_healthcare_temp_2 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = hel_cooldown }
+			}
+			policy_healthcare_level_3_click_enabled = {
+				NOT = { has_idea = policy_healthcare_temp_3 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = hel_cooldown }
+			}
+			policy_healthcare_level_4_click_enabled = {
+				NOT = { has_idea = policy_healthcare_temp_4 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = hel_cooldown }
+			}
+			policy_healthcare_level_5_click_enabled = {
+				NOT = { has_idea = policy_healthcare_temp_5 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = hel_cooldown }
+			}
+
+		}
+	}	
+	edu_policy_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "edu_policy_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 1 }
+		}	
+		effects = {
+			policy_education_level_0_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_education_temp_0
+				remove_ideas = policy_education_temp_1
+				remove_ideas = policy_education_temp_2
+				remove_ideas = policy_education_temp_3
+				remove_ideas = policy_education_temp_4
+				
+				add_ideas = policy_education_temp_0
+				edu_expenditure = yes
+				add_timed_idea = {
+					idea = edu_cooldown
+					days = 1
+				}
+			}
+			policy_education_level_1_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_education_temp_0
+				remove_ideas = policy_education_temp_1
+				remove_ideas = policy_education_temp_2
+				remove_ideas = policy_education_temp_3
+				remove_ideas = policy_education_temp_4
+				
+				add_ideas = policy_education_temp_1
+				edu_expenditure = yes
+				add_timed_idea = {
+					idea = edu_cooldown
+					days = 1
+				}
+			}
+			policy_education_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_education_temp_0
+				remove_ideas = policy_education_temp_1
+				remove_ideas = policy_education_temp_2
+				remove_ideas = policy_education_temp_3
+				remove_ideas = policy_education_temp_4
+				
+				add_ideas = policy_education_temp_2
+				edu_expenditure = yes
+				add_timed_idea = {
+					idea = edu_cooldown
+					days = 1
+				}
+			}
+			policy_education_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_education_temp_0
+				remove_ideas = policy_education_temp_1
+				remove_ideas = policy_education_temp_2
+				remove_ideas = policy_education_temp_3
+				remove_ideas = policy_education_temp_4
+				
+				add_ideas = policy_education_temp_3
+				edu_expenditure = yes
+				add_timed_idea = {
+					idea = edu_cooldown
+					days = 1
+				}
+			}
+			policy_education_level_4_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_education_temp_0
+				remove_ideas = policy_education_temp_1
+				remove_ideas = policy_education_temp_2
+				remove_ideas = policy_education_temp_3
+				remove_ideas = policy_education_temp_4
+				
+				add_ideas = policy_education_temp_4
+				edu_expenditure = yes
+				add_timed_idea = {
+					idea = edu_cooldown
+					days = 1
+				}
+			}			
+			
+		}
+		triggers = {
+			policy_education_level_0_click_enabled = {
+				NOT = { has_idea = policy_education_temp_0 }
+				NOT = { has_idea = edu_cooldown }
+			}
+			policy_education_level_1_click_enabled = {
+				NOT = { has_idea = policy_education_temp_1 }
+				NOT = { has_idea = edu_cooldown }
+			}
+			policy_education_level_2_click_enabled = {
+				NOT = { has_idea = policy_education_temp_2 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = edu_cooldown }
+			}
+			policy_education_level_3_click_enabled = {
+				NOT = { has_idea = policy_education_temp_3 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = edu_cooldown }
+			}
+			policy_education_level_4_click_enabled = {
+				NOT = { has_idea = policy_education_temp_4 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = edu_cooldown }
+			}
+
+		}
+	}	
+
+	army_policy_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "army_policy_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 1 }
+		}	
+		effects = {
+			policy_military_level_1_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_military_temp_0
+				remove_ideas = policy_military_temp_1
+				remove_ideas = policy_military_temp_2
+				remove_ideas = policy_military_temp_3
+				remove_ideas = policy_military_temp_4
+				remove_ideas = policy_military_temp_5
+
+				add_ideas = policy_military_temp_1
+				miitary_expenditure = yes
+				add_timed_idea = {
+					idea = mil_cooldown
+					days = 1
+				}
+			}
+			policy_military_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_military_temp_0
+				remove_ideas = policy_military_temp_1
+				remove_ideas = policy_military_temp_2
+				remove_ideas = policy_military_temp_3
+				remove_ideas = policy_military_temp_4
+				remove_ideas = policy_military_temp_5
+
+				add_ideas = policy_military_temp_2
+				miitary_expenditure = yes
+				add_timed_idea = {
+					idea = mil_cooldown
+					days = 1
+				}
+			}
+			policy_military_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_military_temp_0
+				remove_ideas = policy_military_temp_1
+				remove_ideas = policy_military_temp_2
+				remove_ideas = policy_military_temp_3
+				remove_ideas = policy_military_temp_4
+				remove_ideas = policy_military_temp_5
+				
+				add_ideas = policy_military_temp_3
+				miitary_expenditure = yes
+				add_timed_idea = {
+					idea = mil_cooldown
+					days = 1
+				}
+			}
+			policy_military_level_4_click = {
+				set_variable = { legislation_support = 0 }
+				
+				remove_ideas = policy_military_temp_0
+				remove_ideas = policy_military_temp_1
+				remove_ideas = policy_military_temp_2
+				remove_ideas = policy_military_temp_3
+				remove_ideas = policy_military_temp_4
+				remove_ideas = policy_military_temp_5
+				
+				add_ideas = policy_military_temp_4
+				miitary_expenditure = yes
+				add_timed_idea = {
+					idea = mil_cooldown
+					days = 1
+				}
+
+			}				
+		}
+		triggers = {
+			policy_military_level_0_click_enabled = {
+				NOT = { has_idea = policy_military_temp_0 }
+				NOT = { has_idea = mil_cooldown }
+			}
+			policy_military_level_1_click_enabled = {
+				NOT = { has_idea = policy_military_temp_1 }
+				NOT = { has_idea = mil_cooldown }
+			}
+			policy_military_level_2_click_enabled = {
+				NOT = { has_idea = policy_military_temp_2 }
+				NOT = { has_idea = mil_cooldown }
+			}
+			policy_military_level_3_click_enabled = {
+				NOT = { has_idea = policy_military_temp_3 }
+				NOT = { has_idea = mil_cooldown }
+			}
+			policy_military_level_4_click_enabled = {
+				NOT = { has_idea = policy_military_temp_4 }
+				NOT = { has_idea = mil_cooldown }
+			}
+			policy_military_level_5_click_enabled = {
+				NOT = { has_idea = policy_military_temp_5 }
+				NOT = { has_idea = mil_cooldown }
+			}
+
+		}
+	}	
+	welfare_policy_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "welfare_policy_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 1 }
+		}	
+		effects = {
+			policy_welfare_level_0_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_welfare_temp_0
+				remove_ideas = policy_welfare_temp_1
+				remove_ideas = policy_welfare_temp_2
+				remove_ideas = policy_welfare_temp_3
+				remove_ideas = policy_welfare_temp_4
+				remove_ideas = policy_welfare_temp_5
+				
+				add_ideas = policy_welfare_temp_0
+				welfare_expenditure = yes
+				
+				add_timed_idea = {
+					idea = wel_cooldown
+					days = 1
+				}
+			}
+			policy_welfare_level_1_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_welfare_temp_0
+				remove_ideas = policy_welfare_temp_1
+				remove_ideas = policy_welfare_temp_2
+				remove_ideas = policy_welfare_temp_3
+				remove_ideas = policy_welfare_temp_4
+				remove_ideas = policy_welfare_temp_5
+				
+				add_ideas = policy_welfare_temp_1
+				welfare_expenditure = yes
+				add_timed_idea = {
+					idea = wel_cooldown
+					days = 1
+				}
+			}
+			policy_welfare_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_welfare_temp_0
+				remove_ideas = policy_welfare_temp_1
+				remove_ideas = policy_welfare_temp_2
+				remove_ideas = policy_welfare_temp_3
+				remove_ideas = policy_welfare_temp_4
+				remove_ideas = policy_welfare_temp_5
+				
+				add_ideas = policy_welfare_temp_2
+				welfare_expenditure = yes
+				add_timed_idea = {
+					idea = wel_cooldown
+					days = 1
+				}
+			}
+			policy_welfare_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_welfare_temp_0
+				remove_ideas = policy_welfare_temp_1
+				remove_ideas = policy_welfare_temp_2
+				remove_ideas = policy_welfare_temp_3
+				remove_ideas = policy_welfare_temp_4
+				remove_ideas = policy_welfare_temp_5
+				
+				add_ideas = policy_welfare_temp_3
+				welfare_expenditure = yes
+				add_timed_idea = {
+					idea = wel_cooldown
+					days = 1
+				}
+			}
+			policy_welfare_level_4_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_welfare_temp_0
+				remove_ideas = policy_welfare_temp_1
+				remove_ideas = policy_welfare_temp_2
+				remove_ideas = policy_welfare_temp_3
+				remove_ideas = policy_welfare_temp_4
+				remove_ideas = policy_welfare_temp_5
+				
+				add_ideas = policy_welfare_temp_4
+				welfare_expenditure = yes
+				add_timed_idea = {
+					idea = wel_cooldown
+					days = 1
+				}
+			}			
+			policy_welfare_level_5_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_welfare_temp_0
+				remove_ideas = policy_welfare_temp_1
+				remove_ideas = policy_welfare_temp_2
+				remove_ideas = policy_welfare_temp_3
+				remove_ideas = policy_welfare_temp_4
+				remove_ideas = policy_welfare_temp_5
+				
+				add_ideas = policy_welfare_temp_5
+				welfare_expenditure = yes
+				add_timed_idea = {
+					idea = wel_cooldown
+					days = 1
+				}
+			}					
+		}
+		triggers = {
+			policy_welfare_level_0_click_enabled = {
+				NOT = { has_idea = policy_welfare_temp_0 }
+				NOT = { has_idea = wel_cooldown }
+			}
+			policy_welfare_level_1_click_enabled = {
+				NOT = { has_idea = policy_welfare_temp_1 }
+				NOT = { has_idea = wel_cooldown }
+			}
+			policy_welfare_level_2_click_enabled = {
+				NOT = { has_idea = policy_welfare_temp_2 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = wel_cooldown }
+			}
+			policy_welfare_level_3_click_enabled = {
+				NOT = { has_idea = policy_welfare_temp_3 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = wel_cooldown }
+			}
+			policy_welfare_level_4_click_enabled = {
+				NOT = { has_idea = policy_welfare_temp_4 }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = wel_cooldown }
+			}
+			policy_welfare_level_5_click_enabled = {
+				NOT = { has_idea = policy_welfare_temp_5 }
+				NOT = { has_idea = wel_cooldown }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+			}
+
+		}
+	}	
+	cpi_policy_tab_menu = {
+ 
+		context_type = player_context
+
+		window_name = "cpi_policy_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 1 }
+		}	
+		effects = {
+			policy_cpi_level_0_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_cpi_temp_0
+				remove_ideas = policy_cpi_temp_1
+				remove_ideas = policy_cpi_temp_2
+				remove_ideas = policy_cpi_temp_3
+				remove_ideas = policy_cpi_temp_4
+				remove_ideas = policy_cpi_temp_5
+				
+				add_ideas = policy_cpi_temp_0
+				cpi_expenditure = yes
+				add_timed_idea = {
+					idea = cpi_cooldown
+					days = 1
+				}
+			}
+			policy_cpi_level_1_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_cpi_temp_0
+				remove_ideas = policy_cpi_temp_1
+				remove_ideas = policy_cpi_temp_2
+				remove_ideas = policy_cpi_temp_3
+				remove_ideas = policy_cpi_temp_4
+				remove_ideas = policy_cpi_temp_5
+				
+				add_ideas = policy_cpi_temp_1
+				cpi_expenditure = yes
+				add_timed_idea = {
+					idea = cpi_cooldown
+					days = 1
+				}
+			}
+			policy_cpi_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_cpi_temp_0
+				remove_ideas = policy_cpi_temp_1
+				remove_ideas = policy_cpi_temp_2
+				remove_ideas = policy_cpi_temp_3
+				remove_ideas = policy_cpi_temp_4
+				remove_ideas = policy_cpi_temp_5
+				
+				add_ideas = policy_cpi_temp_2
+				cpi_expenditure = yes
+				add_timed_idea = {
+					idea = cpi_cooldown
+					days = 1
+				}
+			}
+			policy_cpi_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_cpi_temp_0
+				remove_ideas = policy_cpi_temp_1
+				remove_ideas = policy_cpi_temp_2
+				remove_ideas = policy_cpi_temp_3
+				remove_ideas = policy_cpi_temp_4
+				remove_ideas = policy_cpi_temp_5
+				
+				add_ideas = policy_cpi_temp_3
+				cpi_expenditure = yes
+				add_timed_idea = {
+					idea = cpi_cooldown
+					days = 1
+				}
+			}
+			policy_cpi_level_4_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_cpi_temp_0
+				remove_ideas = policy_cpi_temp_1
+				remove_ideas = policy_cpi_temp_2
+				remove_ideas = policy_cpi_temp_3
+				remove_ideas = policy_cpi_temp_4
+				remove_ideas = policy_cpi_temp_5
+				
+				add_ideas = policy_cpi_temp_4
+				cpi_expenditure = yes
+				add_timed_idea = {
+					idea = cpi_cooldown
+					days = 1
+				}
+			}			
+			policy_cpi_level_5_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = policy_cpi_temp_0
+				remove_ideas = policy_cpi_temp_1
+				remove_ideas = policy_cpi_temp_2
+				remove_ideas = policy_cpi_temp_3
+				remove_ideas = policy_cpi_temp_4
+				remove_ideas = policy_cpi_temp_5
+				
+				add_ideas = policy_cpi_temp_5
+				cpi_expenditure = yes
+				add_timed_idea = {
+					idea = cpi_cooldown
+					days = 1
+				}
+			}					
+		}
+		triggers = {
+			policy_cpi_level_0_click_enabled = {
+				NOT = { has_idea = policy_cpi_temp_0 }
+				NOT = { has_idea = cpi_cooldown }
+			}
+			policy_cpi_level_1_click_enabled = {
+				NOT = { has_idea = policy_cpi_temp_1 }
+				NOT = { has_idea = cpi_cooldown }
+			}
+			policy_cpi_level_2_click_enabled = {
+				NOT = { has_idea = policy_cpi_temp_2 }
+				NOT = { has_idea = cpi_cooldown }
+			}
+			policy_cpi_level_3_click_enabled = {
+				NOT = { has_idea = policy_cpi_temp_3 }
+				NOT = { has_idea = cpi_cooldown }
+			}
+			policy_cpi_level_4_click_enabled = {
+				NOT = { has_idea = policy_cpi_temp_4 }
+				NOT = { has_idea = cpi_cooldown }
+			}
+			policy_cpi_level_5_click_enabled = {
+				NOT = { has_idea = policy_cpi_temp_5 }
+				NOT = { has_idea = cpi_cooldown }
+			}
+
+		}
+	}		
+	gen_fin_info_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "gen_fin_info_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 3 }
+		}	
+		
+	}
+	debt_fin_info_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "debt_fin_info_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 3 }
+		}	
+		
+	}
+	policy_cost_info_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "policy_info_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 3 }
+		}	
+		
+	}
+	income_info_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "income_info_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 3 }
+		}	
+
+	}
+	corruption_info_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "corruption_info_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 3 }
+		}	
+		
+	}
+	tax_info_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "tax_info_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 3 }
+		}	
+		effects = {
+			policy_tax_level_0_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Austrian_Taxation
+				remove_ideas = Light_Taxation
+				remove_ideas = Moderate_Taxation
+				remove_ideas = Progressive_Taxation
+				remove_ideas = Heavy_Taxation
+				remove_ideas = Marxist_Taxation
+				
+				add_ideas = Austrian_Taxation
+				tax_rate = yes
+				add_timed_idea = {
+					idea = tax_cooldown
+					days = 1
+				}
+			}
+			policy_tax_level_1_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Austrian_Taxation
+				remove_ideas = Light_Taxation
+				remove_ideas = Moderate_Taxation
+				remove_ideas = Progressive_Taxation
+				remove_ideas = Heavy_Taxation
+				remove_ideas = Marxist_Taxation
+				
+				add_ideas = Light_Taxation
+				tax_rate = yes
+				add_timed_idea = {
+					idea = tax_cooldown
+					days = 1
+				}
+			}
+			
+			policy_tax_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Austrian_Taxation
+				remove_ideas = Light_Taxation
+				remove_ideas = Moderate_Taxation
+				remove_ideas = Progressive_Taxation
+				remove_ideas = Heavy_Taxation
+				remove_ideas = Marxist_Taxation
+				
+				add_ideas = Moderate_Taxation
+				tax_rate = yes
+				add_timed_idea = {
+					idea = tax_cooldown
+					days = 1
+				}
+			}
+			policy_tax_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Austrian_Taxation
+				remove_ideas = Light_Taxation
+				remove_ideas = Moderate_Taxation
+				remove_ideas = Progressive_Taxation
+				remove_ideas = Heavy_Taxation
+				remove_ideas = Marxist_Taxation
+				
+				add_ideas = Progressive_Taxation
+				tax_rate = yes
+				add_timed_idea = {
+					idea = tax_cooldown
+					days = 1
+				}
+			}
+			policy_tax_level_4_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Austrian_Taxation
+				remove_ideas = Light_Taxation
+				remove_ideas = Moderate_Taxation
+				remove_ideas = Progressive_Taxation
+				remove_ideas = Heavy_Taxation
+				remove_ideas = Marxist_Taxation
+				
+				add_ideas = Heavy_Taxation
+				tax_rate = yes
+				add_timed_idea = {
+					idea = tax_cooldown
+					days = 1
+				}
+			}			
+			policy_tax_level_5_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Austrian_Taxation
+				remove_ideas = Light_Taxation
+				remove_ideas = Moderate_Taxation
+				remove_ideas = Progressive_Taxation
+				remove_ideas = Heavy_Taxation
+				remove_ideas = Marxist_Taxation
+				add_ideas = Marxist_Taxation
+				tax_rate = yes
+				add_timed_idea = {
+					idea = tax_cooldown
+					days = 1
+				}
+			}					
+		}
+		triggers = {
+			policy_tax_level_0_click_enabled = {
+				NOT = { has_idea = Austrian_Taxation }
+				NOT = { has_idea = tax_cooldown }
+			}
+			policy_tax_level_1_click_enabled = {
+				NOT = { has_idea = Light_Taxation }
+				NOT = { has_idea = tax_cooldown }
+			}
+			policy_tax_level_2_click_enabled = {
+				NOT = { has_idea = tax_cooldown }
+				NOT = { has_idea = Moderate_Taxation }
+			}
+			policy_tax_level_3_click_enabled = {
+				NOT = { has_idea = Progressive_Taxation }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = tax_cooldown }
+			}
+			policy_tax_level_4_click_enabled = {
+				NOT = { has_idea = Heavy_Taxation }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = tax_cooldown }
+			}
+			policy_tax_level_5_click_enabled = {
+				NOT = { has_idea = Marxist_Taxation }
+				NOT = { has_country_flag = IMF_SAP_ENACTED }
+				NOT = { has_idea = tax_cooldown }
+			}
+
+		}
+	}
+	SAGA_POL_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "SAGA_POL_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 2 }
+		}	
+
+		effects = {
+			policy_SAGA_POL_level_0_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = gen_notsaga_1
+				remove_ideas = gen_notsaga_2
+				remove_ideas = gen_semighey_1
+				remove_ideas = gen_semighey_2
+				remove_ideas = gen_ghey_1
+				remove_ideas = gen_ghey_2
+				
+				add_ideas = gen_notsaga_1
+				add_timed_idea = {
+					idea = saga_cooldown
+					days = 1
+				}
+			}
+			policy_SAGA_POL_level_1_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = gen_notsaga_1
+				remove_ideas = gen_notsaga_2
+				remove_ideas = gen_semighey_1
+				remove_ideas = gen_semighey_2
+				remove_ideas = gen_ghey_1
+				remove_ideas = gen_ghey_2
+				
+				add_ideas = gen_notsaga_2
+				add_timed_idea = {
+					idea = saga_cooldown
+					days = 1
+				}
+			}
+			policy_SAGA_POL_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = gen_notsaga_1
+				remove_ideas = gen_notsaga_2
+				remove_ideas = gen_semighey_1
+				remove_ideas = gen_semighey_2
+				remove_ideas = gen_ghey_1
+				remove_ideas = gen_ghey_2
+				
+				add_ideas = gen_semighey_1
+				add_timed_idea = {
+					idea = saga_cooldown
+					days = 1
+				}
+			}
+			policy_SAGA_POL_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = gen_notsaga_1
+				remove_ideas = gen_notsaga_2
+				remove_ideas = gen_semighey_1
+				remove_ideas = gen_semighey_2
+				remove_ideas = gen_ghey_1
+				remove_ideas = gen_ghey_2
+				
+				add_ideas = gen_semighey_2
+				add_timed_idea = {
+					idea = saga_cooldown
+					days = 1
+				}
+			}
+			policy_SAGA_POL_level_4_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = gen_notsaga_1
+				remove_ideas = gen_notsaga_2
+				remove_ideas = gen_semighey_1
+				remove_ideas = gen_semighey_2
+				remove_ideas = gen_ghey_1
+				remove_ideas = gen_ghey_2
+				
+				add_ideas = gen_ghey_1
+				add_timed_idea = {
+					idea = saga_cooldown
+					days = 1
+				}
+			}			
+
+		}
+		triggers = {
+			policy_SAGA_POL_level_0_click_enabled = {
+				NOT = { has_idea = gen_notsaga_1 }
+				NOT = { has_idea = saga_cooldown }
+			}
+			policy_SAGA_POL_level_1_click_enabled = {
+				NOT = { has_idea = gen_notsaga_2 }
+				NOT = { has_idea = saga_cooldown }
+			}
+			policy_SAGA_POL_level_2_click_enabled = {
+				NOT = { has_idea = gen_semighey_1 }
+				NOT = { has_idea = saga_cooldown }
+			}
+			policy_SAGA_POL_level_3_click_enabled = {
+				NOT = { has_idea = gen_semighey_2 }
+				NOT = { has_idea = saga_cooldown }
+			}
+			policy_SAGA_POL_level_4_click_enabled = {
+				NOT = { has_idea = gen_ghey_1 }
+				NOT = { has_idea = saga_cooldown }
+			}
+			policy_SAGA_POL_level_5_click_enabled = {
+				NOT = { has_idea = gen_ghey_2 }
+				NOT = { has_idea = saga_cooldown }
+			}
+
+		}
+	}	
+	RAC_POL_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "RAC_POL_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 2 }
+		}	
+
+		effects = {
+			policy_RAC_POL_level_0_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Oppressive
+				remove_ideas = Repressive
+				remove_ideas = Segregated
+				remove_ideas = Equal_Rights
+				remove_ideas = Affirimative_Action
+				
+				add_ideas = Oppressive
+				add_timed_idea = {
+					idea = rac_cooldown
+					days = 1
+				}
+			}
+			policy_RAC_POL_level_1_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Oppressive
+				remove_ideas = Repressive
+				remove_ideas = Segregated
+				remove_ideas = Equal_Rights
+				remove_ideas = Affirimative_Action
+				
+				add_ideas = Repressive
+				add_timed_idea = {
+					idea = rac_cooldown
+					days = 1
+				}
+			}
+			policy_RAC_POL_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Oppressive
+				remove_ideas = Repressive
+				remove_ideas = Segregated
+				remove_ideas = Equal_Rights
+				remove_ideas = Affirimative_Action
+				
+				add_ideas = Segregated
+				add_timed_idea = {
+					idea = rac_cooldown
+					days = 1
+				}
+			}
+			policy_RAC_POL_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Oppressive
+				remove_ideas = Repressive
+				remove_ideas = Segregated
+				remove_ideas = Equal_Rights
+				remove_ideas = Affirimative_Action
+				
+				add_ideas = Equal_Rights
+				add_timed_idea = {
+					idea = rac_cooldown
+					days = 1
+				}
+			}
+			policy_RAC_POL_level_4_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Oppressive
+				remove_ideas = Repressive
+				remove_ideas = Segregated
+				remove_ideas = Equal_Rights
+				remove_ideas = Affirimative_Action
+				
+				add_ideas = Affirimative_Action
+				add_timed_idea = {
+					idea = rac_cooldown
+					days = 1
+				}
+			}			
+				
+		}
+		triggers = {
+			policy_RAC_POL_level_0_click_enabled = {
+				NOT = { has_idea = Oppressive }
+				NOT = { has_idea = rac_cooldown }
+			}
+			policy_RAC_POL_level_1_click_enabled = {
+				NOT = { has_idea = Repressive }
+				NOT = { has_idea = rac_cooldown }
+			}
+			policy_RAC_POL_level_2_click_enabled = {
+				NOT = { has_idea = Segregated }
+				NOT = { has_idea = rac_cooldown }
+			}
+			policy_RAC_POL_level_3_click_enabled = {
+				NOT = { has_idea = Equal_Rights }
+				NOT = { has_idea = rac_cooldown }
+			}
+			policy_RAC_POL_level_4_click_enabled = {
+				NOT = { has_idea = Affirimative_Action }
+				NOT = { has_idea = rac_cooldown }
+			}
+		}
+	}		
+	WOM_POL_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "WOM_POL_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 2 }
+		}	
+
+		effects = {
+			policy_WOM_POL_level_0_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Patriarchy
+				remove_ideas = Cognitive_Patriarchy
+				remove_ideas = Traditional
+				remove_ideas = Womens_Rights_Policy
+				remove_ideas = Equality
+				remove_ideas = Positive_Action
+				
+				add_ideas = Patriarchy
+				add_timed_idea = {
+					idea = wom_cooldown
+					days = 1
+				}
+			}
+			policy_WOM_POL_level_1_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Patriarchy
+				remove_ideas = Cognitive_Patriarchy
+				remove_ideas = Traditional
+				remove_ideas = Womens_Rights_Policy
+				remove_ideas = Equality
+				remove_ideas = Positive_Action
+				
+				add_ideas = Cognitive_Patriarchy
+				add_timed_idea = {
+					idea = wom_cooldown
+					days = 1
+				}
+			}
+			policy_WOM_POL_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Patriarchy
+				remove_ideas = Cognitive_Patriarchy
+				remove_ideas = Traditional
+				remove_ideas = Womens_Rights_Policy
+				remove_ideas = Equality
+				remove_ideas = Positive_Action
+				
+				add_ideas = Traditional
+				add_timed_idea = {
+					idea = wom_cooldown
+					days = 1
+				}
+			}
+			policy_WOM_POL_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Patriarchy
+				remove_ideas = Cognitive_Patriarchy
+				remove_ideas = Traditional
+				remove_ideas = Womens_Rights_Policy
+				remove_ideas = Equality
+				remove_ideas = Positive_Action
+				
+				add_ideas = Womens_Rights_Policy
+				add_timed_idea = {
+					idea = wom_cooldown
+					days = 1
+				}
+			}
+			policy_WOM_POL_level_4_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Patriarchy
+				remove_ideas = Cognitive_Patriarchy
+				remove_ideas = Traditional
+				remove_ideas = Womens_Rights_Policy
+				remove_ideas = Equality
+				remove_ideas = Positive_Action
+				
+				add_ideas = Equality
+				add_timed_idea = {
+					idea = wom_cooldown
+					days = 1
+				}
+			}			
+			policy_WOM_POL_level_5_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = Patriarchy
+				remove_ideas = Cognitive_Patriarchy
+				remove_ideas = Traditional
+				remove_ideas = Womens_Rights_Policy
+				remove_ideas = Equality
+				remove_ideas = Positive_Action
+				
+				add_ideas = Positive_Action	
+				add_timed_idea = {
+					idea = wom_cooldown
+					days = 1
+				}
+				
+			}					
+		}
+		triggers = {
+			policy_WOM_POL_level_0_click_enabled = {
+				NOT = { has_idea = Patriarchy }
+				NOT = { has_idea = wom_cooldown }
+			}
+			policy_WOM_POL_level_1_click_enabled = {
+				NOT = { has_idea = Cognitive_Patriarchy }
+				NOT = { has_idea = wom_cooldown }
+			}
+			policy_WOM_POL_level_2_click_enabled = {
+				NOT = { has_idea = Traditional }
+				NOT = { has_idea = wom_cooldown }
+			}
+			policy_WOM_POL_level_3_click_enabled = {
+				NOT = { has_idea = Womens_Rights_Policy }
+				NOT = { has_idea = wom_cooldown }
+			}
+			policy_WOM_POL_level_4_click_enabled = {
+				NOT = { has_idea = Equality }
+				NOT = { has_idea = wom_cooldown }
+			}
+			policy_WOM_POL_level_5_click_enabled = {
+				NOT = { has_idea = Positive_Action }
+				NOT = { has_idea = wom_cooldown }
+			}
+
+		}
+	}		
+
+	VOT_POL_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "VOT_POL_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 2 }
+		}	
+
+		effects = {
+			VOT_POL_level_0_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = No_Voting
+				remove_ideas = Elites_Only
+				remove_ideas = Restricted_Voting
+				remove_ideas = Universal_Sufferage
+				
+				add_ideas = No_Voting
+				add_timed_idea = {
+					idea = vot_cooldown
+					days = 1
+				}
+			}
+			VOT_POL_level_1_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = No_Voting
+				remove_ideas = Elites_Only
+				remove_ideas = Restricted_Voting
+				remove_ideas = Universal_Sufferage
+				
+				add_ideas = Elites_Only
+				add_timed_idea = {
+					idea = vot_cooldown
+					days = 1
+				}
+			}
+			VOT_POL_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = No_Voting
+				remove_ideas = Elites_Only
+				remove_ideas = Restricted_Voting
+				remove_ideas = Universal_Sufferage
+				
+				add_ideas = Restricted_Voting
+				add_timed_idea = {
+					idea = vot_cooldown
+					days = 1
+				}
+			}
+			VOT_POL_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = No_Voting
+				remove_ideas = Elites_Only
+				remove_ideas = Restricted_Voting
+				remove_ideas = Universal_Sufferage
+				
+				add_ideas = Universal_Sufferage
+				add_timed_idea = {
+					idea = vot_cooldown
+					days = 1
+				}
+			}
+					
+		}
+		triggers = {
+			VOT_POL_level_0_click_enabled = {
+				NOT = { has_idea = No_Voting }
+				NOT = { has_idea = vot_cooldown }
+			}
+			VOT_POL_level_1_click_enabled = {
+				NOT = { has_idea = Elites_Only }
+				NOT = { has_idea = vot_cooldown }
+			}
+			VOT_POL_level_2_click_enabled = {
+				NOT = { has_idea = Restricted_Voting }
+				NOT = { has_idea = vot_cooldown }
+			}
+			VOT_POL_level_3_click_enabled = {
+				NOT = { has_idea = Universal_Sufferage }
+				NOT = { has_idea = vot_cooldown }
+			}
+
+		}
+	}	
+	MEDIA_POL_tab_menu = {
+
+		context_type = player_context
+
+		window_name = "MEDIA_POL_tab"
+		parent_window_name = legislation_menu
+		visible = {
+			check_variable = { policy_legislation = 2 }
+		}	
+
+		effects = {
+			policy_MEDIA_POL_level_0_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = State_Press
+				remove_ideas = Regulated_Press
+				remove_ideas = State_Shareholder
+				remove_ideas = Free_Press
+				remove_ideas = Corporate_Press
+				
+				add_ideas = State_Press
+				add_timed_idea = {
+					idea = media_cooldown
+					days = 1
+				}
+			}
+			policy_MEDIA_POL_level_1_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = State_Press
+				remove_ideas = Regulated_Press
+				remove_ideas = State_Shareholder
+				remove_ideas = Free_Press
+				remove_ideas = Corporate_Press
+				
+				add_ideas = Regulated_Press
+				add_timed_idea = {
+					idea = media_cooldown
+					days = 1
+				}
+			}
+			policy_MEDIA_POL_level_2_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = State_Press
+				remove_ideas = Regulated_Press
+				remove_ideas = State_Shareholder
+				remove_ideas = Free_Press
+				remove_ideas = Corporate_Press
+				
+				add_ideas = State_Shareholder
+				add_timed_idea = {
+					idea = media_cooldown
+					days = 1
+				}
+			}
+			policy_MEDIA_POL_level_3_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = State_Press
+				remove_ideas = Regulated_Press
+				remove_ideas = State_Shareholder
+				remove_ideas = Free_Press
+				remove_ideas = Corporate_Press
+				
+				add_ideas = Free_Press
+				add_timed_idea = {
+					idea = media_cooldown
+					days = 1
+				}
+			}
+			policy_MEDIA_POL_level_4_click = {
+				set_variable = { legislation_support = 0 }
+				remove_ideas = State_Press
+				remove_ideas = Regulated_Press
+				remove_ideas = State_Shareholder
+				remove_ideas = Free_Press
+				remove_ideas = Corporate_Press
+				
+				add_ideas = Corporate_Press
+				add_timed_idea = {
+					idea = media_cooldown
+					days = 1
+				}
+			}			
+				
+		}
+		triggers = {
+			policy_MEDIA_POL_level_0_click_enabled = {
+				NOT = { has_idea = State_Press }
+				NOT = { has_idea = media_cooldown }
+			}
+			policy_MEDIA_POL_level_1_click_enabled = {
+				NOT = { has_idea = Regulated_Press }
+				NOT = { has_idea = media_cooldown }
+			}
+			policy_MEDIA_POL_level_2_click_enabled = {
+				NOT = { has_idea = State_Shareholder }
+				NOT = { has_idea = media_cooldown }
+			}
+			policy_MEDIA_POL_level_3_click_enabled = {
+				NOT = { has_idea = Free_Press }
+				NOT = { has_idea = media_cooldown }
+			}
+			policy_MEDIA_POL_level_4_click_enabled = {
+				NOT = { has_idea = Corporate_Press }
+				NOT = { has_idea = media_cooldown }
+			}
+
+		}
+	}		
+
+}
