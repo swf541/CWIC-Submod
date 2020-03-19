@@ -958,38 +958,38 @@ defined_text = { #
         trigger = {
             has_idea = policy_healthcare_temp_0
         }
-        localization_key = "Current System: "Informal Medical System"
+        localization_key = policy_healthcare_temp_1
     }
 	text = { 
         trigger = {
             has_idea = policy_healthcare_temp_1
         }
-        localization_key = "Current System: "Semi-Formal Medical System"
+        localization_key = policy_healthcare_temp_1
     }		
 	text = { 
         trigger = {
             has_idea = policy_healthcare_temp_2
         }
-        localization_key = "Current System: "Formal Medical System"
+        localization_key = policy_healthcare_temp_2
     }	
 	text = { 
         trigger = {
             has_idea = policy_healthcare_temp_3
         }
-        localization_key = "Current System: "Semi-Modern Medical System"
+        localization_key = policy_healthcare_temp_3
     }		
 	
 	text = { 
         trigger = {
             has_idea = policy_healthcare_temp_4
         }
-        localization_key = "Current system: "Modern Medical System"
+        localization_key = policy_healthcare_temp_4
     }
 	text = { 
         trigger = {
             has_idea = policy_healthcare_temp_5
         }
-        localization_key = "Current System: "Advanced Medical System"
+        localization_key = policy_healthcare_temp_5
     }
 }
 
