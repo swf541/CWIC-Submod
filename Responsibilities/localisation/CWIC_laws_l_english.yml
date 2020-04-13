@@ -204,19 +204,15 @@
  
  #POLICIES#
  
- policy_military_temp_0:0 "REMOVE SOON"
- policy_military_temp_1:0 "Decentralized Structure"
- policy_military_temp_2:0 "Basic Military Structure"
+ policy_military_temp_1:0 "Basic Military Structure"
+ policy_military_temp_2:0 "Centralized Military Structure"
  policy_military_temp_3:0 "Systemized Military"
  policy_military_temp_4:0 "Fully Combined Military"
- policy_military_temp_5:0 "REMOVE SOON"
  
- policy_military_temp_0_desc:0 "Demilitarized society with a small military maintained for peacekeeping, emergency, and ceremonial purposes"
- policy_military_temp_1_desc:0 "Army that is primarily composed of reservists and mothballed weapons for the purpose of minimal spending"
- policy_military_temp_2_desc:0 "An army that spends only enough to defend itself and relies heavily on allies"
- policy_military_temp_3_desc:0 "A large army capable of counterattacks or offensive operations"
- policy_military_temp_4_desc:0 "A massive army that is large enough to spearhead attacks and defend other countries"
- policy_military_temp_5_desc:0 "Tremendous spending and a massive warchest for the purpose of fighting in a global conflict"
+ policy_military_temp_1_desc:0 "A basic military structure that does not rely on wide-scale networks to run. Relies on a standard chain of command system w/ the minimum necessary centralized elements to maintain strategic command."
+ policy_military_temp_2_desc:0 "A centralized, modernized military structure that extensively uses command and control systems to run itself"
+ policy_military_temp_3_desc:0 "A highly systemized military that integrates information technology into its command system and extensively invests in its bases of operation and logistics to maintain its capabilities."
+ policy_military_temp_4_desc:0 "An extremely advanced military structure that combines all of its elements into a massive joint system that seemlessly integrates all combat elements into a highly efficient war machine"
  
  
  #EDICTS[projects]#
